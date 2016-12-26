@@ -5,6 +5,7 @@ package ExcelProcessor;
  */
 public class Main {
 
+	//Startup function for the program//
     public static void main(String[] args) {
 
         String excelFilePathWithFileName = "F:\\JavaProjects\\ExcelPoc\\ExcelFiles\\excel_data_2010.xlsx";

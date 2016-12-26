@@ -18,7 +18,7 @@ import java.util.Iterator;
  */
 public class ExcelUtil {
 
-
+	//Get the unique file name//
     public static String GetUniqueFileName()
     {
         DateFormat dateFormat = new SimpleDateFormat("dd_MMM_yyyy-HH_mm_ss");
@@ -26,7 +26,8 @@ public class ExcelUtil {
         return "Insert_Queries_" + dateFormat.format(date) + ".txt";
     }
 
-    public boolean ReadExcel2010AndCreateQuery(String excelFilePathWithFileName, int excelColumnLength, String textFilePath) {
+    //Read the data from Excel and Create Insert Query//
+	public boolean ReadExcel2010AndCreateQuery(String excelFilePathWithFileName, int excelColumnLength, String textFilePath) {
         try {
             String textFilePathWithFileName = textFilePath + GetUniqueFileName();
 
@@ -72,6 +73,7 @@ public class ExcelUtil {
         }
     }
 
+	//Insert Queries are created//
     public String createInsertQueries(ArrayList<String> allExcelColumnValues, int excelColumnLength, String excelSheetName) throws Exception {
         try {
 
@@ -138,6 +140,7 @@ public class ExcelUtil {
         }
     }
 
+	//Write the queries into file//
     public void WriteToFile(String path, String contentToWrite) {
         try {
             PrintStream out = new PrintStream(new FileOutputStream(path));
@@ -151,7 +154,7 @@ public class ExcelUtil {
         }
     }
 
-
+	//Insert the data into database//
     public void DbInsert(String finalInsertQueries) throws Exception {
 /*
         Class.forName(DRIVER_CLASS);
