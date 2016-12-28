@@ -13,9 +13,6 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.Iterator;
 
-/**
- * Created by Sandeep on 21 Feb 2015.
- */
 public class ExcelUtil {
 
 	//Get the unique file name//
