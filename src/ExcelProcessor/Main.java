@@ -1,8 +1,4 @@
 package ExcelProcessor;
-
-/**
- * Created by Sandeep on 22 Feb 2015.
- */
 public class Main {
 
 	//Startup function for the program//
